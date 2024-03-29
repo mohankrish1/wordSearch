@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(251, 254, 228);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  height: auto;
+  position: relative;
+}
+
+.container h2 {
+  display: inline-block;
+  margin: 0.5em;
+  color: rgb(0, 128, 128);
+  font-size: 30px;
+}
+
+.container h2 span {
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.hr {
+  border: 1.5px solid rgb(0, 128, 128);
+}
+
+.theme {
+  background-color: rgb(0, 128, 128);
+  color: white;
+  border: none;
+  padding: 3px;
+  font-size: 11px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 128, 128);
+  justify-content: center;
+}
+
+.input label {
+  font-size: 30px;
+  margin: 2.5em 0 0.5em 0;
+  text-align: center;
+}
+
+.input input {
+  width: 50%;
+  margin: 0.5em auto;
+  padding: 0.5em;
+  font-size: 20px;
+}
+
+.input input[type='number'] {
+  width: 20%;
+  margin: 0.5em;
+}
+
+.input input[type='submit'] {
+  width: 15%;
+  background-color: rgb(0, 128, 128);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.input > div {
+  margin: auto;
+}
+
+.input input[type='submit']:hover,
+.theme:hover {
+  opacity: 0.5;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 850px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+.input h3 {
+  overflow: hidden;
+  position: absolute;
+  top: 3.25em;
+  left: 0;
+  animation: move 12s linear infinite;
+  font-size: 30px;
+  color: red;
+}
